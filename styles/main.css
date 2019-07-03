@@ -1,20 +1,29 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif;     
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 * {
+}
+
+.sunwithface {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* Links */
 
 /* A link that has not been visited */
 a:link {
-  color:#222;
+  color: #222;
 }
 
 /* A link that has been visited */
@@ -31,7 +40,6 @@ a:hover {
 a:active {
   color: #222;
 }
-
 
 .sand-white {
   background: #f5f3f0;
@@ -73,7 +81,7 @@ a:active {
   transition: 0.25s ease;
 }
 
-.test:hover>.snek {
+.test:hover > .snek {
   -webkit-transition: all 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: translateX(25px) translateY(-50%);
@@ -111,6 +119,8 @@ nav {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
@@ -132,8 +142,6 @@ p {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
   /* opacity: 0; */
 }
 
@@ -187,12 +195,11 @@ section {
   transition: 0.25s ease;
 }
 
-.work:hover>.image {
+.work:hover > .image {
   transform: scale(1.2);
   transition: 0.25s ease;
   background-color: red;
 }
-
 
 .list a img {
   /* opacity: 0; */
@@ -214,7 +221,8 @@ section {
   transition: 0.3s;
 }
 
-.work a:hover img {}
+.work a:hover img {
+}
 
 .list {
   font-size: 64px;
@@ -338,7 +346,6 @@ Animations
   animation: rotating 15s linear infinite;
 }
 
-
 /* Queries */
 
 /* 
@@ -346,14 +353,16 @@ Animations
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -361,7 +370,9 @@ Animations
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .sidenav {display: none;}
+  .sidenav {
+    display: none;
+  }
 }
 
 /* 
@@ -370,8 +381,6 @@ Animations
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-
 }
 
 /* 
@@ -379,18 +388,57 @@ Animations
   ##Screen = B/w 481px to 767px
 */
 
-
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 767px) {
+  nav {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+  }
+  .header-micro {
+    font-size: 16px;
+  }
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .sunwithface {
+    width: 60px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  nav a {
+    text-decoration: none;
+    margin-left: 8px;
+  }
 
-  .sidenav {display: none;}
+  nav a:last-child {
+    text-decoration: none;
+  }
+
+  .homepage-vid {
+    margin-top: 10px;
+    width: 60%;
+    height: auto;
+  }
+
+  .header-definition {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .sidenav {
+    display: none;
+  }
   h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .blogpost {
@@ -423,33 +471,31 @@ Animations
     margin-right: 20px;
   }
 
+  .sunwithface {
+    font-size: 40px;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
 
-.sunwithface {
-  font-size: 40px;
-}
-nav a:first-child {
- margin-left: 0;
-}
-
-
-nav a {
-  text-decoration: none;
-  margin-left: 2rem;
-}
+  nav a {
+    text-decoration: none;
+    margin-left: 2rem;
+  }
 }
 
 .highlighted {
-  background-color: #204ECF;
-  padding:5px;
+  background-color: #204ecf;
+  padding: 5px;
 }
 .highlighted:hover {
-  background-color: #183A9E;
-  padding:5px;
+  background-color: #183a9e;
+  padding: 5px;
 }
 
 .highlighted a {
   color: white;
-  padding:5px;
+  padding: 5px;
 }
 
 .sidenav {
@@ -477,6 +523,10 @@ nav a {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
