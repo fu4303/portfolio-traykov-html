@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <style>
+    <!-- <style>
       @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i|IBM+Plex+Sans:100,100i,400,400i,700,700i");
-    </style>
+    </style> -->
     <link rel="shortcut icon" type="image/png" href="/me-fav.png" />
     <link
       rel="stylesheet"
@@ -14,11 +14,12 @@
     />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <title>Alexander Traykov</title>
   </head>
   <body>
     <!-- Nav  -->
-    <nav class="home container section">
+    <nav class="home container">
       <a href="/">
         <!-- <img class="logo" src="logo.svg"> -->
         <div class="sunwithface"><img src="sasi.svg" /></div>
@@ -36,15 +37,15 @@
       <header class="infoVid section">
         <div class="info">
           <!-- Info about me -->
-          <p class="header-micro">Pleased to meet you, I'm</p>
-          <h1>Alexander Traykov</h1>
           <p class="header-definition f3-l">
-            A Product Designer working for
-            <span class="dib ml2 mt2 highlighted grow"
-              ><a href="https://www.toptal.com">Toptal</a></span
-            >
+              <h1>Hey there, I'm
+                  <span class="typer" id="main" data-words="Alexander 👋, Сашо 🇧🇬, a product designer 🔨, a cat person 😻, a bike rider 🚲, a film shooter 🎞, an ex-grappler 🤼‍♂️ " data-delay="100" data-deleteDelay="1000"></span>
+                  <span class="cursor" data-owner="main"></span>
+                </h1>
+                <p class="subcopy"> I'm currently working at the core design team at<span class="dib ml2 mt2 highlighted grow"><a href="https://www.toptal.com">Toptal</a></span></p>
+           
           </p>
-          <p>Based in the sunny city of Sofia, Bulgaria 🏔</p>
+          <p class="tertiary-paragraph">Based in the sunny city of Sofia, Bulgaria 🏔</p>
         </div>
         <video autoplay loop class="homepage-vid">
           <source src="me-smiling4.mp4" type="video/mp4" />
@@ -54,85 +55,146 @@
         <div class="">
           <div class="pb3 section">
             <div class="lh-copy project-body">
-              <div class="pt3 tc tl-m tl-l pt5-l bb mb3">
-                <h2 class="f3 f2-l">Writing</h2>
+              <div class="pt3 tc tl-m tl-l bb mb3">
+                <h2 class="f3 f2-l">Side projects</h2>
                 <p class="f4 f3-ns">
-                  Words on life, design and the merge of both
+                  Passionate work outside of work
                 </p>
               </div>
-              <div class="test">
-                <a
-                  class="no-underline color-inherit relative test"
-                  href="/radio-check.html"
-                >
-                  <div
-                    class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+              <div class="project-container">
+                <div class="project">
+                  <a
+                    class="no-underline color-inherit relative"
+                    href="/weare.html"
                   >
-                    <h3 class="f4 f3-ns b dark-gray">
-                      Radio Check, Radio Check
-                    </h3>
-                    <p class="f5">25 July 2019</p>
+                    <div
+                      class="tc bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                    >
+                      <img
+                        class="bg-image"
+                        src="/weare-gif.gif"
+                        alt="man walking towards a boxing ring"
+                        srcset=""
+                      />
                   </div>
+                </div>
+                 <div class="pj-heading-paragraph">
+                    <h2 class="underline">we-are design blog</h2>
+                    <p>We improve the way how martial artists discover gyms that are best suitable for them</p>
+                 </div>
                 </a>
-                <img
-                  class="snek"
-                  src="photos/sunwithface2.png"
-                  alt="Amsterdam handrawn illustration"
-                />
               </div>
-              <div class="test">
-                <a
-                  class="no-underline color-inherit relative test"
-                  href="/time.html"
-                >
-                  <div
-                    class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
-                  >
-                    <h3 class="f4 f3-ns b dark-gray">Taking my time back</h3>
-                    <p class="f5">29 April 2019</p>
+              <div class="project-container pt4">
+                  <div class="project">
+                    <a
+                      class="no-underline color-inherit relative"
+                      href="#"
+                    >
+                      <div
+                        class="tc bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                      >
+                        <img
+                          class="disabled"
+                          src="/dojohunt-bgphoto.png"
+                          alt="man walking towards a boxing ring"
+                          srcset=""
+                        />
+                      </div>
+                    </div>
+                  <div class="heading-padding-div">
+                     <div class="pj-heading-paragraph">
+                       <div class="flex items-center">
+                          <h2 class="underline mr3">Dojohunt</h2>
+                          <p class="microcopy ">Case study coming soon</p>
+                       </div>
+                        <p>We improve the way how martial artists cover gyms that are best suitable for them</p>
+                      </div>
                   </div>
-                </a>
-                <img
-                  class="snek"
-                  src="./timeback.png"
-                  alt="Amsterdam handrawn illustration"
-                />
-              </div>
-              <div class="test">
-                <a
-                  class="no-underline color-inherit relative test"
-                  href="/amsterdam.html"
-                >
-                  <div
-                    class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                  </a>
+                </div>
+            </div>
+            <div class="pb3 section">
+              <div class="lh-copy project-body">
+                <div class="tc tl-m tl-l pt4-l bb mb3">
+                  <h2 class="f3 f2-l">Writing</h2>
+                  <p class="f4 f3-ns">
+                    Words on life, design and the merge of both
+                  </p>
+                </div>
+                <div class="test">
+                  <a
+                    class="no-underline color-inherit relative test"
+                    href="/radio-check.html"
                   >
-                    <h3 class="f4 f3-ns b dark-gray">
-                      Letter for Amsterdam
-                    </h3>
-                    <p class="f5">02 March 2019</p>
-                  </div>
-                </a>
-                <img
-                  class="snek"
-                  src="./amsturdam.png"
-                  alt="Amsterdam handrawn illustration"
-                />
-              </div>
-              <div class="test">
-                <a
-                  class="no-underline color-inherit relative test"
-                  href="/circle.html"
-                >
-                  <div
-                    class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                    <div
+                      class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                    >
+                      <h3 class="f4 f3-ns b dark-gray">
+                        Radio Check, Radio Check
+                      </h3>
+                      <p class="f5">25 July 2019</p>
+                    </div>
+                  </a>
+                  <img
+                    class="snek"
+                    src="photos/sunwithface2.png"
+                    alt="Amsterdam handrawn illustration"
+                  />
+                </div>
+                <div class="test">
+                  <a
+                    class="no-underline color-inherit relative test"
+                    href="/time.html"
                   >
-                    <h3 class="f4 f3-ns b dark-gray">
-                      A vicious, unforgiving circle
-                    </h3>
-                    <p class="f5">28 February 2019</p>
-                  </div>
-                </a>
-                <img class="snek" src="./snek.png" alt="Snake illustration" />
+                    <div
+                      class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                    >
+                      <h3 class="f4 f3-ns b dark-gray">Taking my time back</h3>
+                      <p class="f5">29 April 2019</p>
+                    </div>
+                  </a>
+                  <img
+                    class="snek"
+                    src="./timeback.png"
+                    alt="Amsterdam handrawn illustration"
+                  />
+                </div>
+                <div class="test">
+                  <a
+                    class="no-underline color-inherit relative test"
+                    href="/amsterdam.html"
+                  >
+                    <div
+                      class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                    >
+                      <h3 class="f4 f3-ns b dark-gray">
+                        Letter for Amsterdam
+                      </h3>
+                      <p class="f5">02 March 2019</p>
+                    </div>
+                  </a>
+                  <img
+                    class="snek"
+                    src="./amsturdam.png"
+                    alt="Amsterdam handrawn illustration"
+                  />
+                </div>
+                <div class="test">
+                  <a
+                    class="no-underline color-inherit relative test"
+                    href="/circle.html"
+                  >
+                    <div
+                      class="mb3 tc tl-ns blogpost pa3 bg-gray dark-sand-white db flex-m flex-l justify-between items-center"
+                    >
+                      <h3 class="f4 f3-ns b dark-gray">
+                        A vicious, unforgiving circle
+                      </h3>
+                      <p class="f5">28 February 2019</p>
+                    </div>
+                  </a>
+                  <img class="snek" src="./snek.png" alt="Snake illustration" />
+                </div>
               </div>
             </div>
           </div>
@@ -146,7 +208,7 @@
     <script src="js/demo.js"></script>
     <script>
       $(document).ready(function() {
-        $(".homepage-vid").show();
+        $('.homepage-vid').show();
       });
     </script>
   </body>
