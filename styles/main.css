@@ -110,6 +110,12 @@ a:active {
   transition: 0.3s ease-in-out;
 }
 
+.dropshadow-bg {
+  background-color: white;
+  box-shadow: 0 10.2px 35.1px rgba(0, 0, 0, 0.019),
+    0 77px 204px rgba(0, 0, 0, 0.08);
+}
+
 .heading-padding-div {
   display: flex;
   justify-content: space-between;
@@ -372,6 +378,123 @@ section {
 /* 
 ################################### 
 
+Italian page
+
+###################################
+*/
+.timeline-container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-title {
+  font-size: 24px;
+}
+
+.timeline-info {
+  font-size: 18px;
+}
+
+.timeline-type {
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #ffe8d9;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.timeline-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.semibold {
+  font-weight: 500;
+}
+
+.container ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 1px dashed #d9d4ce;
+}
+
+.timeline-container ul li {
+  margin: 150px 60px;
+  position: relative;
+  padding: 30px;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.timeline-container ul li div {
+  margin-bottom: 15px;
+}
+
+.timeline-container ul li > span {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60px;
+  height: 100%;
+}
+
+.timeline-container ul li > span:before,
+.container ul li > span:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ff6300;
+  position: absolute;
+  border-radius: 100%;
+  background: #ffe8d9;
+  left: -6px;
+}
+
+.timeline-container ul li > span:before {
+  top: -10px;
+}
+
+.timeline-container ul li > span:after {
+  top: 100%;
+}
+
+.timeline-container ul li .time span {
+  position: absolute;
+  text-align: right;
+  font-size: 14px;
+  left: -125px;
+  width: 45px;
+}
+
+.timeline-container ul li .time span:first-child {
+  top: -12px;
+}
+
+.timeline-container ul li .time span:last-child {
+  top: 100%;
+}
+
+.timeline-button {
+  background: none;
+  border: 2px solid #ff6300;
+  width: 250px;
+  padding: 15px 25px;
+  margin: 0 auto;
+  transition: all 150ms ease-out;
+}
+.timeline-button:hover {
+  background: none;
+  border: 5px solid #ff6300;
+}
+
+/* 
+################################### 
+
 Animations
 
 ###################################
@@ -616,5 +739,110 @@ Animations
   }
   .sidenav a {
     font-size: 18px;
+  }
+
+  /* 
+################################### 
+
+Italian page
+
+###################################
+*/
+  .timeline-container {
+    width: 100%;
+  }
+
+  .timeline-title {
+    font-size: 24px;
+  }
+
+  .timeline-info {
+    font-size: 18px;
+  }
+
+  .timeline-type {
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #ffe8d9;
+    border-radius: 50px;
+    display: inline-block;
+  }
+
+  .timeline-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .semibold {
+    font-weight: 500;
+  }
+
+  .container ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 1px dashed #d9d4ce;
+  }
+
+  .timeline-container ul li {
+    margin: 150px 60px;
+    position: relative;
+    padding: 30px;
+    background-color: #fff;
+    padding-bottom: 20px;
+  }
+
+  .timeline-container ul li div {
+    margin-bottom: 15px;
+  }
+
+  .timeline-container ul li > span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    height: 100%;
+  }
+
+  .timeline-container ul li > span:before,
+  .container ul li > span:after {
+    display: none;
+  }
+
+  .timeline-container ul li > span:before {
+    top: -10px;
+  }
+
+  .timeline-container ul li > span:after {
+    top: 100%;
+  }
+
+  .timeline-container ul li .time span {
+    display: none;
+  }
+
+  .timeline-container ul li .time span:first-child {
+    top: -12px;
+  }
+
+  .timeline-container ul li .time span:last-child {
+    top: 100%;
+  }
+
+  .timeline-button {
+    background: none;
+    border: 2px solid #ff6300;
+    width: 250px;
+    padding: 15px 25px;
+    margin: 0 auto;
+    transition: all 150ms ease-out;
+  }
+  .timeline-button:hover {
+    background: none;
+    border: 5px solid #ff6300;
   }
 }
