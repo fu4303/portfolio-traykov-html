@@ -644,6 +644,16 @@ Animations
     line-height: 1.5;
   }
 
+  .timeline-container {
+    width: 90%;
+  }
+
+  .timeline-container ul li {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
   .sidenav {
     display: none;
   }
@@ -744,13 +754,10 @@ Animations
   /* 
 ################################### 
 
-Italian page
+Italian page mobile
 
 ###################################
 */
-  .timeline-container {
-    width: 100%;
-  }
 
   .timeline-title {
     font-size: 24px;
@@ -770,9 +777,6 @@ Italian page
 
   .timeline-container ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
   }
 
   .semibold {
@@ -810,7 +814,14 @@ Italian page
 
   .timeline-container ul li > span:before,
   .container ul li > span:after {
-    display: none;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ff6300;
+    position: absolute;
+    border-radius: 100%;
+    background: #ffe8d9;
+    left: -6px;
   }
 
   .timeline-container ul li > span:before {
@@ -822,7 +833,11 @@ Italian page
   }
 
   .timeline-container ul li .time span {
-    display: none;
+    position: absolute;
+    text-align: right;
+    font-size: 14px;
+    left: -125px;
+    width: 45px;
   }
 
   .timeline-container ul li .time span:first-child {
