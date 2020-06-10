@@ -667,6 +667,14 @@ Animations
   .sidenav {
     display: none;
   }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-heading {
+    font-size: 80px;
+  }
 }
 
 /* 
