@@ -91,12 +91,6 @@ a > span {
   background: #d9d4ce;
 }
 
-.project-container {
-}
-
-.content {
-}
-
 .project {
   overflow: hidden;
   height: 300px;
@@ -274,7 +268,6 @@ nav a:first-child {
   margin-left: 0;
 }
 
-/* #################### */
 footer {
   align-items: center;
   padding-top: 80px;
@@ -305,10 +298,6 @@ p {
   max-width: 100%;
 }
 
-nav {
-  /* opacity: 0; */
-}
-
 .sunwithface {
   font-size: 64px;
   padding-left: 0px;
@@ -328,9 +317,21 @@ nav {
 .full-width {
   margin-left: calc(-100vw / 2 + 100% / 2);
   margin-right: calc(-100vw / 2 + 100% / 2);
-  background-color: #d9d4ce;
+  background-color: #fcddac;
   padding-bottom: 100px;
   margin-bottom: 64px;
+}
+
+.full-width-impr {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  background-color: #ecdab6;
+  padding-bottom: 100px;
+  margin-bottom: 64px;
+}
+
+.videoelement {
+  max-width: 960px;
 }
 
 .full-width-cover {
@@ -687,13 +688,6 @@ Animations
 */
 
 @media (min-width: 320px) and (max-width: 767px) {
-  nav {
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-  }
-
   .header-micro {
     font-size: 16px;
   }
@@ -712,6 +706,14 @@ Animations
     margin: 0 auto;
     padding-bottom: 10px;
   }
+
+  nav {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+  }
+
   nav a {
     text-decoration: none;
     margin-left: 4px;
@@ -721,11 +723,65 @@ Animations
     text-decoration: none;
     margin-right: 0;
   }
+  /* ##################### */
+  footer {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+  }
 
+  footer a {
+    text-decoration: none;
+    margin-left: 4px;
+  }
+
+  footer a:last-child {
+    text-decoration: none;
+    margin-right: 0;
+  }
+  .stamp {
+    display: none;
+  }
   .homepage-vid {
     margin-top: 10px;
     width: 60%;
     height: auto;
+  }
+
+  .full-width {
+    margin-left: calc(-100vw / 2 + 100% / 2);
+    margin-right: calc(-100vw / 2 + 100% / 2);
+    background-color: #fcddac;
+  }
+
+  .main-heading {
+    font-family: "bluunext-bold", sans-serif;
+    font-style: normal;
+    font-size: 48px;
+  }
+
+  .main-header {
+    height: 300px;
+  }
+
+  .project {
+    overflow: hidden;
+    height: 350px;
+    padding-top: 25px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .project-image {
+    width: 150px;
+    height: auto;
+    transform: translateX(150px);
+    transform: translateY(80px);
+    transition: ease-in 0.3s;
   }
 
   .highlighted {
@@ -813,9 +869,9 @@ Animations
   padding: 5px;
 }
 
-/* .stamp {
-  display: none;
-} */
+.stamp {
+  max-width: 200px;
+}
 
 .sidenav {
   height: auto; /* Full-height: remove this if you want "auto" height */
