@@ -38,7 +38,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "bluunext-bold", sans-serif;
 }
 
@@ -156,6 +157,28 @@ a > span {
 .project-image:hover {
   transform: translateY(70px);
   transition: ease-in 0.3s;
+}
+
+.project-image-brewculator {
+  width: 500px;
+  height: auto;
+  /* transform: translateY(60px);
+  transform: translateX(40px); */
+  transform-origin: center;
+  transition: ease-in 0.3s;
+}
+
+.project-image-brewculator:hover {
+  transform: scale(1.15, 1.15);
+  /* transform: translateY(60px);
+  transform: translateX(40px); */
+  transform-origin: center;
+  transition: ease-in 0.4s;
+}
+
+.project-image-highlighted {
+  width: 600px;
+  height: auto;
 }
 
 .br-gray {
@@ -314,6 +337,15 @@ p {
   margin-right: auto;
 }
 
+.project-header {
+  padding-bottom: 64px;
+}
+
+.project-image-highlighted {
+  padding-top: 24px;
+  width: 600px;
+}
+
 .full-width {
   margin-left: calc(-100vw / 2 + 100% / 2);
   margin-right: calc(-100vw / 2 + 100% / 2);
@@ -329,6 +361,15 @@ p {
   padding-bottom: 100px;
   margin-bottom: 64px;
 }
+
+.full-width-brewculator {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  background-color: #FFD3B3;
+  padding-bottom: 100px;
+  margin-bottom: 64px;
+}
+
 
 .videoelement {
   max-width: 960px;
@@ -532,14 +573,6 @@ Italian page
   font-weight: 500;
 }
 
-.container ul:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  border: 1px dashed #d9d4ce;
-}
 
 .timeline-container ul li {
   margin: 150px 60px;
@@ -709,6 +742,12 @@ Animations
   .grid-col--2, .grid-col--3 {
     display: none;
   }
+
+  .project-image-highlighted {
+    width: 400px;
+    height: auto;
+  }
+
 }
 
 /* 
@@ -717,8 +756,14 @@ Animations
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
 }
 
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -739,7 +784,9 @@ Animations
   }
 
 
- 
+.container {
+  margin-bottom: 24px;
+}
   .header-definition {
     line-height: 4;
   }
@@ -828,6 +875,7 @@ Animations
     transition: ease-in 0.3s;
   }
 
+
   .highlighted {
     background-color: none;
   }
@@ -906,6 +954,11 @@ Animations
   .grid-col--2, .grid-col--3 {
     display: none;
   }
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
 
 .highlighted {
@@ -944,6 +997,13 @@ Animations
   text-decoration: none;
   display: block;
   text-align: right;
+}
+
+
+
+.full-width-brewculator {
+  background-color: #FFD3B3;
+  padding-bottom: 0;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -1075,3 +1135,4 @@ Italian page mobile
   list-style: none !important;
   padding-left: 0;
 }
+

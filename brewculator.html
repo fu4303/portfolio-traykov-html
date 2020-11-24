@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i|IBM+Plex+Sans:100,100i,400,400i,700,700i");
+  </style>
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Brewculator || Product Design Case Study</title>
+</head>
+<script src="movement.js"></script>
+<script src="js/anime.min.js"></script>
+
+<body>
+  <div class="container">
+    <div class=" full-width-brewculator">
+      <nav class="home container anim1">
+        <a href="/">
+          <!-- <img class="logo" src="logo.svg"> -->
+          <div class="sunwithface"><img src="sasi.svg" /></div>
+        </a>
+        <div class="nav-items">
+          <a href="/writing.html" class="about">writing</a>
+          <a href="/about.html" class="about">about</a>
+          <a href="/photos.html" class="about">photos</a>
+          <a href="/codex-2020.html" class="about">codex</a>
+          <!-- <a href="writing.html" class="writing">writing</a> -->
+          <!-- <a href="/photos.html" class="writing">photos</a> -->
+        </div>
+      </nav>
+      <header class=" section">
+        <div class="flex justify-between container project-header">
+          <div class="project-description">
+            <a href="./index.html" class="no-underline b anim1"><span>⬅</span>Back</a>
+            <h1 class="project-head anim1">
+              Brewculator
+            </h1>
+            <p class="anim1 f5 b f3-ns">Product Design Case Study</p>
+            <p class="project-copy mw6 lh-copy anim1">A number of ratios for popular brewing methods, fine control over
+              its measuring units and general coffee brewing tips all together
+              in one powerful coffee assistant.
+            </p>
+          </div>
+          <img class="mb5 anim1 project-image-highlighted" src="./photos/brewculator/brewculator-twophones.png">
+        </div>
+      </header>
+    </div>
+
+
+    <div class="content">
+      <div class="mw7 lh-copy project-body">
+        <div class="section">
+          <h2 class="f2-ns f3">Preface</h2>
+          <p class="lh-copy f4">I am very passionate about coffee. In my spare time I tinker around my kitchen,
+            trying
+            to
+            craft the best tasting French press, espresso or other various pourovers. I read about different sorts of
+            beans and their sources, about ratio methods and ways to make the cup of Joe taste better.</p>
+          <img class="section" src="./photos/brewculator/coffee-standartma.jpeg">
+          <p class="lh-copy f4">
+            Having spent more
+            than a year exploring the world of coffee I noticed a repeating pattern - while brewing, I had to
+            double-check the specific ratios, then find a calculator, then find a timer and after all that's set up I
+            actually focus on the craft of making a cup. All of these complications started to bother me and did impact
+            the quality of my coffee at times. At that moment the idea was born - I should make myself a calculator that
+            has a bunch of pre-made ratios for the most popular brewing methods, fine control over the measuring units
+            and probably some general tips of the brewing method itself.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="f2-ns f2">Design process overview</h2>
+          <p class="lh-copy f4">When working on the side, I usually have the tendency to get carried away, hence why I
+            follow a
+            design process structure strictly. I always start with a bit of research that helps me formulate my idea,
+            then I open up my trusty notebook for some of that hand drawing ideation. Once I get something cooking, I go
+            to Sketch and I aim to formulate an initial design that I usually build upon until I'm happy with it. After
+            the design is finalised, I try to bring it to life either on the web or on my iPhone.</p>
+        </div>
+        <div class="section">
+        </div>
+        <div class="section">
+          <h3 class="f3-ns f3">Research and wireframing</h3>
+          <p class="lh-copy f4">
+            The world of coffee is vast, rich and very complicated. The digitalisation of it has commenced more than 20
+            years ago. It's current state spans from various coffee forums and websites to mobile apps of all sorts and
+            desktop-based applications for coffee gene analysis and tracking. The main idea of my research was to see if
+            there's a need of an application like the one I had in mind. While the idea of a coffee calculator was
+            present on the web and mobile realms, the exact combination of having your brewing recipes, methods and
+            ratios in one place in your pocket were either behind paywalls or scattered throughout multiple pages and
+            apps.
+          </p>
+          <img class="section" src="./photos/brewculator/brewculator-sketchbook-wireframe.png">
+          <p class="lh-copy f4">
+            The research confirmed that there's a gap which I could potentially fill and hopefully make the mornings
+            of other coffee enthusiasts a tad easier with my app. The idea for a coffee calculator has been in my head
+            for the past one year, and I even had something very basic done for Caffetarium - the coffee blog I've been
+            working on. I was very close to leverage both the design and approach to what I had before but then I
+            encountered an awesome tweet.
+          </p>
+          <img class="section" src="./photos/brewculator/caffeterium-calculator.png">
+          <i></i>
+          <p class="lh-copy f4">A major part of the inspiration of how the app would work came from the super-talanted
+            designer Aris Acoba
+            and his tiny <a href="https://twitter.com/aris_acoba/status/1303641016432377857">ice-pour over
+              calculator</a> he crafted a while back.</p>
+
+          <p class="lh-copy f4">
+            Thanks to the combination of what I had in mind, Aris' approach and my interpretation of it, it was time to
+            boot up Sketch and bring this thing to life.
+          </p>
+        </div>
+        <div class="section">
+          <h3 class="f2-ns f3">UI Design</h3>
+          <img class="section" src="./photos/brewculator/brewculator-twophones-left.png">
+          <p class="lh-copy f4">
+            After a number of iterations, small tweaks and good amount of reading of Apple's HIG, I ended up with the
+            first version of the home screen. It's core idea is simplicity and flexibility at the hands of the users. My
+            idea was to keep it as simple as possible, giving the users the ability to quickly calculate their coffee to
+            water ratio and then focus on their brew in real life.
+          </p>
+        </div>
+        <div class="section">
+          <h4 class="pt3 f3-ns f4">Filtering Segments</h4>
+          <img class="section" src="./photos/brewculator/brewculator-mockup-filtering-pills.png">
+          <p class="lh-copy f4">
+            The screen is stripped down to a simple pill selector, the calculator itself and a hidden
+            section with additional tips for the specific recipe.
+
+            The selected recipe is highlighted both with the pill and the screen's heading as well. This is the most
+            important controller in the app, since coffee is a very delicate science, in which you can ruin a cup with
+            just a couple of grams of extra beans or water. Knowing that, having the different ratios as the first
+            prominent item is crucial.
+
+            The predefined ratio are based on a research I did, exploring the most popular recipes from renowned
+            baristas and coffee experts from around the world.
+          </p>
+        </div>
+        <div class="section">
+          <h4 class="pt3 f3-ns f4">The Ratio Calculator</h4>
+          <img class="section" src="./photos/brewculator/brewculator-calculator.png">
+          <p class="lh-copy f4">
+            The calculator is the core of the app. It was especially important for me to focus and create a seamless,
+            minimalistic UI so it is intuitive and easy to use. This section of the app is split in two input fields
+            which interact with one another based on the selected recipe. For example if you input 30 grams of coffee on
+            the top field, the app would automatically return the needed amount of water (510ml in that case) for your
+            recipe.
+          </p>
+          <img class="section" src="./photos/brewculator/brewculator-twocalcs.png">
+          <p class="microcopy i tc gray">The different corresponding measuring units for the <span
+              class="b">Coffee</span> and <span class="b">Water</span> sections of the calculator</p>
+          <p class="lh-copy f4">
+            At the bottom of both input fields, I added a bunch of segmented controls which allow the users change the
+            measuring units of their choice. While my personal preference is to use grams for all my brews, many people
+            are still using imperial metrics. The cool part of this feature is that it will allow users to have the
+            flexibility to calculate their brews however they feel most comfortable, having a vast number of
+            measurements at their hand.
+          </p>
+          <img class="section" src="./photos/brewculator/brewculator-calc-prototype.gif">
+          <p class="microcopy tc i gray">The interactions of changing the measuring units in the segmented controls</p>
+        </div>
+        <div class="section">
+          <h4 class="pt3 f3-ns f4">Brewing Tips</h4>
+          <p class="lh-copy f4">
+            The final section of the screen is where the additional information for the brew would be listed. It's
+            function is as a reminder of the general expectations of for the corresponding brewing method. The case is
+            that many of us coffee enthusiasts are making our coffees following various methods which are fairly
+            different one from another, and each has specifics that we tend to forget.
+          </p>
+          <img class="section" src="./photos/brewculator/brewculator-tips.png">
+        </div>
+        <div class="section">
+
+        </div>
+        <div class="section">
+          <h4 class="pt3 f3-ns f4">Onboarding process
+          </h4>
+          <img class="section" src="./photos/brewculator/onboarding-800x600.gif">
+          <p class="lh-copy f4">
+            The idea of the onboarding process came when I was reminded that a good portion of the world is using
+            imperial measuring units and how it wouldn't be most convenient if I create an app that's solely based on
+            what I'm used to, rather than what's useful for all.
+            In it's simple process, the user is being taken through two very important steps.
+            The first one is where they're able to chose their preferred brewing method and set up their default
+            calculator ratios for ease of use. The second step allows the users to either select their measuring units
+            of choise or stay with the default ones. Once that's complete, the user is being taken to the main screen
+            with their pre-selected brewing method and calibrated units of choice.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="pt3 f2-ns f3">Development</h2>
+          <img class="section" src="./photos/brewculator/swiftui-calculation.gif">
+
+          <p class="lh-copy f4">
+            With the initial design in place and the defined updates for further releases, I embarked on the journey of
+            developing my first app in SwiftUI.
+            In the prototype above, you're able to see how I get the input data from the user with a simple get-set
+            method. I get the initial input value regardless of the field, then calculate following the selected ratio
+            from the onboarding process, and set the result as value to the other field. While the prototype seems
+            clunky, it felt like a big win to be able to program the calculation methodology.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="pt3 f2-ns f3">Future goals</h2>
+          <p class="lh-copy f4">
+            My goal is to structure a public product roadmap, and hopefully release a functioning app to the App Store
+            by the end of 2021. With that said, it has been a pleasent, challenging experience so far. Stay tuned and
+            thank you for reading.
+          </p>
+        </div>
+      </div>
+      <footer class="home container">
+        <a href="/">
+          <!-- <img class="logo" src="logo.svg"> -->
+          <h3 class="f4 b tc tl-ns">Alexander Traykov</h3 class="f3">
+        </a>
+        <p class="f5 tc tl-ns pb2 pb0-ns">Made with love and coffee in Sofia, 2020 </p>
+        <div class="nav-items">
+          <a href="https://www.instagram.com/alex.works/" class="about"><span>📸</span>Instagram</a>
+          <a href="https://twitter.com/alextraykov" class="about"><span>🐦</span>Twitter</a>
+          <a href="https://dribbble.com/alextraykoff" class="about"><span>🏀</span>Dribbble</a>
+          <!-- <a href="writing.html" class="writing">writing</a> -->
+          <!-- <a href="/photos.html" class="writing">photos</a> -->
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <script>
+
+      gsap.to('.anim1', { opacity: 1, duration: 0.5, y: 30, stagger: 0.5, ease: 'back.easeInOut' })
+
+      gsap.from('.content', { opacity: 0, y: -30, delay: 0.8 })
+    </script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
