@@ -148,15 +148,13 @@ a > span {
 }
 
 .project-image {
-  width: 200px;
+  width: 250px;
   height: auto;
-  transform: translateY(80px);
   transition: ease-in 0.3s;
 }
 
 .project-image:hover {
-  transform: translateY(70px);
-  transition: ease-in 0.3s;
+  transform-origin: scale(1.2);
 }
 
 .project-image-brewculator {
