@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+  z-index: 999;
+}
+
+nav a:last-child {
+  text-decoration: none;
+}
+
+nav a:first-child {
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.logo {
+  height: 30px;
+}
+
+iframe.refracted {
+  background-color: #fff;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/refracted/fonts/MonumentExtended-Regular.otf') format('otf'),
+    url('/refracted/fonts/MonumentExtended-Ultrabold.otf') format('otf');
+}
+.head-typography {
+  font-family: 'Monument Extended';
+  text-transform: uppercase;
+  font-size: 6rem;
+  color: #111;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  line-height: 0.8;
+  text-align: center;
+  z-index: 10;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  color: #111;
+  line-height: 1.5;
+  text-align: center;
+  z-index: -100;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-new {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sunwithface {
+  max-width: 500px;
+}
+
+.bg-circle-1 {
+  z-index: -10;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  left: +8%;
+  top: -10%;
+}
+
+.img {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.img1 {
+  top: 55%;
+  left: 55%;
+  z-index: -7;
+  animation: circular1 70s linear infinite;
+}
+
+.img2 {
+  top: 5%;
+  left: 20%;
+  animation: circular2 70s linear infinite;
+  z-index: -2;
+}
+
+.img3 {
+  top: -5%;
+  left: 80%;
+  animation: circular3 70s linear infinite;
+}
+
+.img4 {
+  top: 30%;
+  left: 75%;
+  animation: circular4 70s linear infinite;
+}
+.img5 {
+  top: 50%;
+  left: -2%;
+  animation: circular5 70s linear infinite;
+  z-index: -2;
+}
+.img6 {
+  top: -40%;
+  left: 45%;
+  animation: circular6 70s linear infinite;
+}
+.img7 {
+  top: 25%;
+  left: 75%;
+  animation: circular7 70s linear infinite;
+}
+.img8 {
+  top: -10%;
+  left: -15%;
+  animation: circular1 70s linear infinite;
+}
+
+/* Animation */
+
+@keyframes circular1 {
+  from {
+    transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-300px) rotate(360deg);
+  }
+}
+
+@keyframes circular2 {
+  from {
+    transform: rotate(360deg) translate(-30px) rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg) translate(-500px) rotate(0deg);
+  }
+}
+
+@keyframes circular3 {
+  from {
+    transform: rotate(360deg) translate(-10px) rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg) translate(-400px) rotate(0deg);
+  }
+}
+
+@keyframes circular4 {
+  from {
+    transform: rotate(360deg) translate(-60px) rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg) translate(-500px) rotate(0deg);
+  }
+}
+
+@keyframes circular5 {
+  from {
+    transform: rotate(360deg) translate(-80px) rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg) translate(-600px) rotate(0deg);
+  }
+}
+
+@keyframes circular6 {
+  from {
+    transform: rotate(360deg) translate(-30px) rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg) translate(-300px) rotate(0deg);
+  }
+}
+
+@keyframes circular7 {
+  from {
+    transform: rotate(360deg) translate(-50px) rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg) translate(-500px) rotate(0deg);
+  }
+}
+
+#revue-embed {
+  z-index: 1;
+}
+
+.header-subheader {
+  z-index: 1;
+}
+
+.revue-form-field {
+  height: 40px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.revue-form-actions > input {
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+  border-radius: 8px;
+  background-color: #4000f4;
+  border: 0;
+  font-size: 18px;
+}
+/* 
+##########
+Media Queries
+##########
+*/
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .img {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+  }
+  .head-typography {
+    font-family: 'Monument Extended';
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #111;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    line-height: 0.8;
+    text-align: center;
+    z-index: 100;
+  }
+  .container {
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1rem;
+    z-index: 100;
+  }
+
+  p {
+    z-index: 10;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    z-index: -2;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    z-index: -2;
+  }
+  .head-typography {
+    font-family: 'Monument Extended';
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    line-height: 0.8;
+    text-align: center;
+    z-index: 100;
+  }
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1rem;
+    z-index: 100;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    z-index: -2;
+  }
+  .head-typography {
+    font-family: 'Monument Extended';
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    line-height: 0.8;
+    text-align: center;
+    z-index: 100;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .inputandbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

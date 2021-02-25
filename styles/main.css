@@ -3,25 +3,25 @@ html {
 }
 
 /*  Fonts */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
 
 @font-face {
-  font-family: "bluunext-bold";
-  src: url("../fonts/bluunext-bold-webfont.woff") format("woff");
+  font-family: 'bluunext-bold';
+  src: url('../fonts/bluunext-bold-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: "bluunext-italic";
-  src: url("../fonts/bluunext-bolditalic-webfont.woff") format("woff");
+  font-family: 'bluunext-italic';
+  src: url('../fonts/bluunext-bolditalic-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: "bluunext-titling";
-  src: url("../fonts/bluunext-titling-webfont.woff") format("woff");
+  font-family: 'bluunext-titling';
+  src: url('../fonts/bluunext-titling-webfont.woff') format('woff');
 }
 
 .main-heading {
-  font-family: "bluunext-bold", sans-serif;
+  font-family: 'bluunext-bold', sans-serif;
   font-style: normal;
   font-size: 96px;
 }
@@ -40,11 +40,11 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "bluunext-bold", sans-serif;
+  font-family: 'bluunext-bold', sans-serif;
 }
 
 * {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 /* Links */
 
@@ -363,11 +363,10 @@ p {
 .full-width-brewculator {
   margin-left: calc(-100vw / 2 + 100% / 2);
   margin-right: calc(-100vw / 2 + 100% / 2);
-  background-color: #FFD3B3;
+  background-color: #ffd3b3;
   padding-bottom: 100px;
   margin-bottom: 64px;
 }
-
 
 .videoelement {
   max-width: 960px;
@@ -517,20 +516,17 @@ section {
 
 .grid-col {
   flex: 1;
-  padding: 0 .1em;
+  padding: 0 0.1em;
 }
-
-
 
 .cameraname {
   position: absolute;
-  background: rgba(0,0,0, .2);
+  background: rgba(0, 0, 0, 0.2);
   color: white;
   margin-top: 1em;
   margin-right: 1em;
   font-size: 1em;
 }
-
 
 /* 
 ################################### 
@@ -571,7 +567,6 @@ Italian page
   font-weight: 500;
 }
 
-
 .timeline-container ul li {
   margin: 150px 60px;
   position: relative;
@@ -585,7 +580,7 @@ Italian page
 }
 
 .timeline-container ul li > span {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -60px;
@@ -594,7 +589,7 @@ Italian page
 
 .timeline-container ul li > span:before,
 .container ul li > span:after {
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   border: 2px solid #ff6300;
@@ -707,7 +702,6 @@ Animations
   }
 }
 
-
 @media (min-width: 1281px) {
 }
 
@@ -737,7 +731,8 @@ Animations
     font-size: 80px;
   }
 
-  .grid-col--2, .grid-col--3 {
+  .grid-col--2,
+  .grid-col--3 {
     display: none;
   }
 
@@ -745,7 +740,6 @@ Animations
     width: 400px;
     height: auto;
   }
-
 }
 
 /* 
@@ -754,13 +748,9 @@ Animations
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
 }
 
-
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -781,10 +771,13 @@ Animations
     justify-content: space-evenly;
   }
 
+  .nav-items > a {
+    display: flex;
+  }
 
-.container {
-  margin-bottom: 24px;
-}
+  .container {
+    margin-bottom: 24px;
+  }
   .header-definition {
     line-height: 4;
   }
@@ -845,7 +838,7 @@ Animations
   }
 
   .main-heading {
-    font-family: "bluunext-bold", sans-serif;
+    font-family: 'bluunext-bold', sans-serif;
     font-style: normal;
     font-size: 48px;
   }
@@ -872,7 +865,6 @@ Animations
     transform: translateY(80px);
     transition: ease-in 0.3s;
   }
-
 
   .highlighted {
     background-color: none;
@@ -949,13 +941,18 @@ Animations
     padding-right: 1em;
   }
 
-  .grid-col--2, .grid-col--3 {
+  .grid-col--2,
+  .grid-col--3 {
     display: none;
   }
   .project-header {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+  }
+
+  .mobile-copy {
+    display: none;
   }
 }
 
@@ -997,10 +994,8 @@ Animations
   text-align: right;
 }
 
-
-
 .full-width-brewculator {
-  background-color: #FFD3B3;
+  background-color: #ffd3b3;
   padding-bottom: 0;
 }
 
@@ -1016,7 +1011,6 @@ Animations
   .sidenav a {
     font-size: 18px;
   }
-
 
   /* 
 ################################### 
@@ -1051,7 +1045,7 @@ Italian page mobile
   }
 
   .container ul:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1072,7 +1066,7 @@ Italian page mobile
   }
 
   .timeline-container ul li > span {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: -60px;
@@ -1081,7 +1075,7 @@ Italian page mobile
 
   .timeline-container ul li > span:before,
   .container ul li > span:after {
-    content: "";
+    content: '';
     width: 10px;
     height: 10px;
     border: 2px solid #ff6300;
@@ -1133,4 +1127,3 @@ Italian page mobile
   list-style: none !important;
   padding-left: 0;
 }
-
