@@ -14,6 +14,10 @@ nav {
   z-index: 999;
 }
 
+.nav-items {
+  z-index: 999;
+}
+
 nav a {
   text-decoration: none;
   margin-left: 1rem;
@@ -28,11 +32,11 @@ nav a:first-child {
   text-decoration: none;
   margin-left: 0;
 }
-
-.logo {
-  height: 30px;
+.sunwithface {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
 }
-
 iframe.refracted {
   background-color: #fff;
 }
@@ -54,6 +58,7 @@ body {
   font-size: 6rem;
   color: #111;
   margin-bottom: 0;
+  padding-top: 0;
   padding-bottom: 1rem;
   line-height: 0.8;
   text-align: center;
@@ -99,7 +104,7 @@ p {
 }
 
 .img {
-  width: 250px;
+  width: 300px;
   height: auto;
   position: absolute;
   z-index: 1;
@@ -126,7 +131,7 @@ p {
 }
 
 .img4 {
-  top: 30%;
+  top: 50%;
   left: 75%;
   animation: circular4 70s linear infinite;
 }
@@ -144,11 +149,10 @@ p {
 .img7 {
   top: 25%;
   left: 75%;
-  animation: circular7 70s linear infinite;
 }
 .img8 {
-  top: -10%;
-  left: -15%;
+  top: 5%;
+  left: 10%;
   animation: circular1 70s linear infinite;
 }
 
@@ -299,6 +303,7 @@ Media Queries
     font-size: 4rem;
     color: #111;
     margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 1rem;
     line-height: 0.8;
     text-align: center;
