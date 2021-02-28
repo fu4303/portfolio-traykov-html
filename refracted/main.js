@@ -29,5 +29,15 @@ function moveImg(xAmount, yAmount) {
     })
 }
 
+document.addEventListener('DOMMouseScroll', function(e) { 
+    console.log(e);
+    if (e.axis == e.HORIZONTAL_AXIS) {
+        e.stopPropagation(); 
+        e.preventDefault();
+        e.cancelBubble = false; 
+    }
+    return false;
+}, false);
+
 
 
