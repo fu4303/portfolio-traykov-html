@@ -420,16 +420,16 @@ Media Queries
     justify-content: flex-start;
     align-items: center;
   }
-  
+
   .container-new {
     width: 100%;
     padding: 10px;
   }
-  
-  .container { 
+
+  .container {
     width: 100%;
   }
-  
+
   .nav-items {
     background: transparent;
   }
