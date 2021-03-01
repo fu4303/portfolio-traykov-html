@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('./fonts/MonumentExtended-Regular.otf') format('opentype'),
+    url('./fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -47,11 +53,6 @@ body {
   height: 100vh;
 }
 
-@font-face {
-  font-family: 'Monument Extended';
-  src: url('/refracted/fonts/MonumentExtended-Regular.otf') format('otf'),
-    url('/refracted/fonts/MonumentExtended-Ultrabold.otf') format('otf');
-}
 .head-typography {
   font-family: 'Monument Extended';
   text-transform: uppercase;
