@@ -804,6 +804,7 @@ Animations
   nav a:last-child {
     text-decoration: none;
     margin-right: 0;
+    display: none;
   }
   /* ##################### */
   footer {
