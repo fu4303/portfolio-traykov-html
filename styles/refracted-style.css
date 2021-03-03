@@ -55,6 +55,7 @@ body {
 
 .head-typography {
   font-family: 'Monument Extended';
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 6rem;
   color: #111;
@@ -395,7 +396,7 @@ Media Queries
   .head-typography {
     font-family: 'Monument Extended';
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 36px;
     color: #111;
     margin-bottom: 0;
     padding-bottom: 1rem;
@@ -421,16 +422,16 @@ Media Queries
     justify-content: flex-start;
     align-items: center;
   }
-  
+
   .container-new {
     width: 100%;
     padding: 10px;
   }
-  
-  .container { 
+
+  .container {
     width: 100%;
   }
-  
+
   .nav-items {
     background: transparent;
   }
